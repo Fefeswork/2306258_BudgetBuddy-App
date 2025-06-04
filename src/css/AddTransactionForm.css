@@ -1,0 +1,80 @@
+.add-form-wrapper {
+  background-color: var(--card);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .transaction-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .add-form-title {
+    color: var(--text);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .add-form-label {
+    color: var(--text);
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .add-form-input,
+  .add-form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .add-form-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-form-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .add-form-message {
+    color: var(--text);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .add-form-success {
+    color: green;
+  }
+  
+  .add-form-error {
+    color: red;
+  }
+  .transaction-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .transaction-form select,
+  .transaction-form input {
+    margin-top: 0.5rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  

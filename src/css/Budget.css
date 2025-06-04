@@ -1,0 +1,75 @@
+.budget-heading {
+  color: var(--text);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .budget-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .budget-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .budget-card {
+  background-color: var(--card);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .budget-card-title {
+    color: var(--text);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .chart-container {
+    height: 250px;
+  }
+  
+  .budget-form label {
+    color: var(--text);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .budget-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 1rem;
+  }
+  
+  .budget-form button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .budget-form button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .budget-message {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: green;
+  }
+  

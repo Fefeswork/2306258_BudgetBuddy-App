@@ -1,0 +1,75 @@
+.global-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: 'Poppins', sans-serif;
+    color: #374151;
+  }
+  
+  .loader-circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 5px solid #e5e7eb;
+    border-top-color: #4338ca;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* The CSS below is the loader for each of the pages minus the global loader*/
+  
+  .skeleton {
+    background: linear-gradient(90deg, #e5e7eb 25%, #f3f4f6 50%, #e5e7eb 75%);
+    background-size: 400% 100%;
+    animation: pulse 1.2s ease-in-out infinite;
+    border-radius: 8px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .skeleton-title {
+    height: 24px;
+    width: 200px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skeleton-card {
+    height: 200px;
+    border-radius: 16px;
+  }
+  
+  .skeleton-bar {
+    height: 24px;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .skeleton-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+  
+  .skeleton-line {
+    height: 16px;
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+  

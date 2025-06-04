@@ -1,0 +1,211 @@
+/* src/css/style.css */
+
+
+/*toggle feature*/
+
+:root {
+    --bg-gradient: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+    --text: #1f2937;
+    --card: #ffffff;
+    --shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  [data-theme='dark'] {
+    --bg-gradient: linear-gradient(to bottom right, #1f2937, #111827);
+    --text: #f9fafb;
+    --card: #1f2937;
+    --shadow: 0 0 0 transparent;
+  }
+  
+  body {
+    background: var(--bg-gradient);
+    background-size: 400% 400%;
+    animation: bg-shift 0.6s ease;
+    color: var(--text);
+    transition: color 0.3s ease;
+  }
+  
+  @keyframes bg-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+/* LIGHT THEME */
+html[data-theme='light'] {
+    --bg: #f3f4f6;
+    --text: #1f2937;
+    --card: #ffffff;
+    --shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    --btn-bg: #4338ca;
+    --btn-hover: #3730a3;
+    --btn-text: #ffffff;
+  
+    --sidebar-bg: #4338ca;
+    --sidebar-text: #ffffff;
+    --sidebar-hover: rgba(255, 255, 255, 0.1);
+    --sidebar-active-bg: #ffffff;
+    --sidebar-active-text: #4338ca;
+    --sidebar-text-muted: #c7d2fe;
+  }
+  
+  /* DARK THEME */
+  html[data-theme='dark'] {
+    --bg: #111827;
+    --text: #f9fafb;
+    --card: #1f2937;
+    --shadow: none;
+    --btn-bg: #6366f1;
+    --btn-hover: #818cf8;
+    --btn-text: #ffffff;
+  
+    --sidebar-bg: #1f2937;
+    --sidebar-text: #f9fafb;
+    --sidebar-hover: rgba(255, 255, 255, 0.1);
+    --sidebar-active-bg: #f9fafb;
+    --sidebar-active-text: #1f2937;
+    --sidebar-text-muted: #9ca3af;
+  }
+   
+  
+  /* Apply theme variables */
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+  
+  
+/*Main styling*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  p {
+    color: var(--text);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  input, select, textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: white;
+    color: #1f2937;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .app-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 2rem;
+    background-color: var(--bg);
+  }
+
+  .main-content.no-sidebar {
+    margin-left: 0;
+  }  
+  
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
+  
+
+  .global-loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: 'Poppins', sans-serif;
+    color: #374151;
+  }
+  
+  .loader-circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: 5px solid #e5e7eb;
+    border-top-color: #4338ca;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Base styles for mobile-first approach */
+
+.container {
+  padding: 1rem;
+}
+
+/* Tablets and above */
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+/* Desktops and above */
+@media (min-width: 1024px) {
+  .container {
+    padding: 3rem;
+  }
+}
+
+  
